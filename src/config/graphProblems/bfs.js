@@ -7,7 +7,7 @@ export const bfs = {
       (≡ номер слоя), и массив parent, в котором хранятся указатели на родительскую вершину из которой текущая была обнаружена впервые \
       (если существует грань (i,j), то parent[i] = j).",
         "Результирующая производительность алгоритма BFS - O(m + n).",
-        "BFS(G,s)".split("BFS(G,s)").map((paragraphs, index) => <>{index !== 0 && <b>BFS(G,s)</b>} {paragraphs}</>),
+        //"BFS(G,s)".split("BFS(G,s)").map((paragraphs, index) => <>{index !== 0 && <b>BFS(G,s)</b>} {paragraphs}</>),
         "1. d = [∞,..,∞]",
         "2. parent = [⊥,..,⊥]",
         "3. d[s] = 0",
