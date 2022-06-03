@@ -7,7 +7,7 @@ export const bfs = {
       (≡ номер слоя), и массив parent, в котором хранятся указатели на родительскую вершину из которой текущая была обнаружена впервые \
       (если существует грань (i,j), то parent[i] = j).",
         "Результирующая производительность алгоритма BFS - O(m + n).",
-        //"BFS(G,s)".split("BFS(G,s)").map((paragraphs, index) => <>{index !== 0 && <b>BFS(G,s)</b>} {paragraphs}</>),
+        "BFS(G,s)",//.split("BFS(G,s)").map((paragraphs, index) => <>{index !== 0 && <b>BFS(G,s)</b>} {paragraphs}</>),
         "1. d = [∞,..,∞]",
         "2. parent = [⊥,..,⊥]",
         "3. d[s] = 0",
@@ -16,13 +16,13 @@ export const bfs = {
         "6. Q' = {}   //следующий слой",
         "7. for l = 1 to ∞ while Q ≠ {}",
         "8. foreach u ∈ Q",
-        "9. foreach(u,v) ∈ E //сканируем все исходящие грани",
-        "10. if parent[v] = ⊥ //была вершина обнаружена ранее?",
-        "11. Q' = Q' ∪ {v}",
-        "12. d[v] = l",
-        "13. parent[v] = u",
-        "14. (Q, Q') = (Q', {}) //переход на следующий уровень",
-        "15. return (d, parent)"],
+        "9. /TAB/ foreach(u,v) ∈ E //сканируем все исходящие грани",
+        "10. /TAB/ /TAB/ if parent[v] = ⊥ //была вершина обнаружена ранее?",
+        "11. /TAB/ /TAB/ /TAB/ Q' = Q' ∪ {v}",
+        "12. /TAB/ /TAB/ /TAB/ d[v] = l",
+        "13. /TAB/ /TAB/ /TAB/ parent[v] = u",
+        "14. /TAB/ (Q, Q') = (Q', {}) //переход на следующий уровень",
+        "15. /TAB/ return (d, parent)"],
       graphAnimationExample: {
           graph: {
               nodes: [
